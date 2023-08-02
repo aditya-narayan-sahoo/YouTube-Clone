@@ -24,6 +24,11 @@ p {
   margin-bottom: 9px;
 }
 
+.video-link {
+  text-decoration: none;
+  color: black;
+}
+
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -49,29 +54,16 @@ p {
   margin-bottom: 4px;
 }
 
+.channel-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
-}
-
-@media (max-width: 720px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media(min-width : 721px) and (max-width:999px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 1000px) {
-  .video-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
 }
 
 .video-time {
@@ -108,10 +100,12 @@ p {
   height: 24px;
   margin-left: 24px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .yt-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 .middle-sec {
@@ -141,6 +135,7 @@ p {
   border: 1px solid rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 9px;
+  cursor: pointer;
 }
 
 .search-btn .tooltip,
@@ -185,6 +180,7 @@ p {
   border-radius: 20px;
   border: none;
   background-color: rgb(245, 245, 245);
+  cursor: pointer;
 }
 
 .search-btn,
@@ -213,15 +209,18 @@ p {
 
 .upload-icon {
   height: 24px;
+  cursor: pointer;
 }
 
 .yt-apps-icon {
   height: 24px;
+  cursor: pointer;
 }
 
 .current-user-icon {
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .sidebar {
@@ -233,6 +232,11 @@ p {
   width: 72px;
   z-index: 200;
   padding-top: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .sidebar-link {
@@ -259,6 +263,7 @@ p {
 
 .notification-icon {
   height: 24px;
+  cursor: pointer;
 }
 
 .notification-icon-container {
@@ -274,4 +279,22 @@ p {
   font-size: 10px;
   padding: 2px 5px;
   border-radius: 10px;
+}
+
+@media (max-width: 864px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width : 865px) and (max-width:1116px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1117px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
